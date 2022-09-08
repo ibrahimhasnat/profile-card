@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'PT Sans', sans-serif;
+      background-color: #7FBCD2;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Profile Card CSS */
+
+    .profile-card {     
+      border-top: 15px solid #607D8B;
+      background-color: white;
+      width: 300px;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #607D8B;
+    }
+
+    /* Profile Card Head CSS */
+    .profile-card-head {
+      text-align: center;
+    }    
+
+    .profile-card-head img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 100%;
+      border: 5px solid #607D8B;
+    }
+
+    .profile-card-head h3 {
+      font-size: 28px;
+    }
+
+    /* Profile Card Details CSS */
+
+    .profile-card-details {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .profile-card-details span {
+      font-size: 18px;
+    }
+
+    .profile-card-details span i {
+      padding-right: 7px;
+      font-weight: 700;
+      color: #607D8B;
+    }
+
+    /* Social Profile CSS */
+
+    .profile-card .social-links {
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px solid #f6f6f6;
+      display: flex;
+      justify-content: center;
+      gap: 35px;      
+    }
+
+    .profile-card .social-links a {
+      font-size: 22px;
+      color: #607D8B;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="profile-card">
+
+    <!-- Part One -->
+    <div class="profile-card-head">
+      <img src="avatar.png" alt="Jhon Doe">
+      <h3>Jhon Doe</h3>      
+    </div>
+
+    <!-- Part Two -->
+    <div class="profile-card-details">
+      <span><i class="lni lni-laptop"></i> Software Engineer</span>
+      <span><i class="lni lni-envelope"></i> example@example.com</span>      
+      <span><i class="lni lni-map-marker"></i> Texas, USA</span>  
+    </div>
+
+    <!-- Part Three -->
+    <div class="social-links">
+      <a href="#"><i class="lni lni-twitter-original"></i></a>
+      <a href="#"><i class="lni lni-github-original"></i></a>
+      <a href="#"><i class="lni lni-instagram-original"></i></a>            
+    </div>
+
+  </div>
+
+</body>
+</html>
